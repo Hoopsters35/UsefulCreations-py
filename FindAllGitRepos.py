@@ -11,7 +11,7 @@ def search_dir(start_dir, output_file):
     for root, dirs, files in os.walk(start_dir):
         if '.git' in dirs:
             print('.git found in {}'.format(root))
-            output_file.write(str(root) + " ")
+            output_file.write(str(root) + "\n")
             dirs[:] = []
 
 
